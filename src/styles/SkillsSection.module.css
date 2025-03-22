@@ -1,0 +1,114 @@
+.skills {
+  padding: 5rem 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: var(--color-foreground);
+  margin-bottom: 1rem;
+}
+
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  background-color: var(--color-primary);
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tab {
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--color-primary);
+  background-color: transparent;
+  color: var(--color-primary);
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 0.25rem;
+}
+
+.tab:hover {
+  background-color: var(--color-primary-dark);
+  color: white;
+}
+
+.activeTab {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.skillList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skillItem {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.skillInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.skillName {
+  font-weight: 500;
+}
+
+.skillPercentage {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.progressBar {
+  width: 100%;
+  height: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: var(--color-primary);
+  border-radius: 1rem;
+  transition: width 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
