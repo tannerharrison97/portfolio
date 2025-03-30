@@ -163,6 +163,43 @@
   color: var(--color-primary);
   margin-bottom: 0.8rem;
   padding-left: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* Style for the organization (smaller, lighter) */
+.timelineCompany > span:first-child {
+  font-size: 0.9rem;
+  color: var(--color-secondary);
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Style for the company (larger, bolder) */
+.timelineCompany > span:last-child {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 0.2rem;
+}
+
+.timelineLocationContainer {
+  padding-left: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.timelineLocation {
+  font-size: 0.9rem;
+  color: var(--color-foreground);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.timelineLocation::before {
+  content: '📍';
+  font-size: 0.9rem;
 }
 
 .timelineDescription {
@@ -272,7 +309,7 @@
   /* For left items, position dots at right edge */
   .timelineItem:nth-child(odd) .timelineDot {
     left: auto;
-    right: -31px; /* Position dot to center on the timeline */
+    right: -57px; /* Position dot to center on the timeline */
   }
   
   /* For right items, position dots at left edge */
@@ -288,13 +325,24 @@
   .timelineItem:nth-child(odd) .timelineTitle,
   .timelineItem:nth-child(odd) .timelineCompany,
   .timelineItem:nth-child(odd) .timelineDescription,
-  .timelineItem:nth-child(odd) .timelineSkills {
+  .timelineItem:nth-child(odd) .timelineSkills,
+  .timelineItem:nth-child(odd) .timelineLocationContainer {
     text-align: right;
     padding-left: 0;
     padding-right: 0.8rem;
   }
   
   .timelineItem:nth-child(odd) .timelineSkills {
+    justify-content: flex-end;
+  }
+  
+  .timelineItem:nth-child(odd) .timelineLocationContainer {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 0.8rem;
+  }
+  
+  .timelineItem:nth-child(odd) .timelineLocation {
     justify-content: flex-end;
   }
   

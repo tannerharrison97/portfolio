@@ -77,7 +77,7 @@ const HeroSection = () => {
         <div className={styles.imageContainer}>
           <div className={styles.image}>
             <Image
-              src="/yL65Yiy_d.webp"
+              src="/Tanner Headshot.png"
               alt="Profile photo"
               fill
               className={styles.circleImage}

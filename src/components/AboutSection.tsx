@@ -49,23 +49,17 @@ const AboutSection = () => {
           <div className={styles.text}>
             <h3 className={styles.subtitle}>Who I Am</h3>
             <p className={styles.paragraph}>
-              Hi there! I&apos;m a passionate web developer with a strong background in building 
-              modern, responsive websites and applications. I love solving complex problems and 
-              creating intuitive, user-friendly interfaces.
+              Hi there! I&apos;m a passionate engineer with a strong background in software development. I love using code to solve complex problems.
             </p>
             
             <h3 className={styles.subtitle}>My Journey</h3>
             <p className={styles.paragraph}>
-              My journey in web development began over 5 years ago when I built my first website. 
-              Since then, I&apos;ve continuously expanded my skills and knowledge, staying up-to-date 
-              with the latest technologies and best practices in the industry.
+              My journey in software engineering began in college where I studied computer science and applied mathematics.
             </p>
             
             <h3 className={styles.subtitle}>What I Do</h3>
             <p className={styles.paragraph}>
-              I specialize in front-end development using React.js and Next.js, with a strong 
-              focus on responsive design, accessibility, and performance optimization. I also have 
-              experience with back-end technologies, making me a versatile full-stack developer.
+              I have a wide range of experience in software development, from building complex web applications to a background in various data science and machine learning projects.
             </p>
             
             <div className={styles.stats}>
@@ -74,17 +68,17 @@ const AboutSection = () => {
                 <span className={styles.label}>Years Experience</span>
               </div>
               <div className={styles.stat}>
-                <span className={styles.number}>50+</span>
-                <span className={styles.label}>Projects Completed</span>
+                <span className={styles.number}>500+</span>
+                <span className={styles.label}>Merge Requests</span>
               </div>
               <div className={styles.stat}>
-                <span className={styles.number}>20+</span>
-                <span className={styles.label}>Happy Clients</span>
+                <span className={styles.number}>10+</span>
+                <span className={styles.label}>Major Features Delivered</span>
               </div>
             </div>
             
             <a 
-              href="/resume.pdf" 
+              href="/Harrison, Tanner Resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className={styles.resumeButton}

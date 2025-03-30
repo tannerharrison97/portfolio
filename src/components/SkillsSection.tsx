@@ -38,6 +38,17 @@ const SkillsSection = () => {
       ],
     },
     {
+      name: 'Data Science',
+      skills: [
+        { name: 'Markov Chains', proficiency: 80 },
+        { name: 'Monte Carlo', proficiency: 75 },
+        { name: 'KNN', proficiency: 70 },
+        { name: 'Constrained Optimization', proficiency: 65 },
+        { name: 'Control Theory', proficiency: 60 },
+        { name: 'Linear Algebra', proficiency: 55 },
+      ],
+    },
+    {
       name: 'Tools',
       skills: [
         { name: 'Git/GitHub', proficiency: 90 },

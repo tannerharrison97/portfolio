@@ -5,8 +5,10 @@ import styles from '../styles/CareerTimeline.module.css';
 
 type TimelineItem = {
   title: string;
+  org: string;
   company: string;
   period: string;
+  location: string;
   description: string;
   skills?: string[];
 };
@@ -17,25 +19,40 @@ const CareerTimeline = () => {
 
   const timelineItems: TimelineItem[] = [
     {
-      title: "Senior Developer",
-      company: "Tech Innovators Inc.",
-      period: "2021 - Present",
-      description: "Led development of enterprise applications using React and Node.js. Implemented CI/CD pipelines and mentored junior developers.",
+      title: "Software Engineer II",
+      org: "Data Platform",
+      company: "Qualtrics",
+      period: "Oct 2022 - Present",
+      location: "Seattle, WA",
+      description: "Led the development of a data transformation tool enabling users to perform ETL operations directly within Qualtrics. Expanded ETL capabilities helped Qualtrics win massive customer contracts (>$10M) with very niche use cases.",
+      skills: ["React", "Node.js", "AWS", "TypeScript", "Agile", "Spark"]
+    },
+    {
+      title: "Software Engineer I",
+      org: "Data Platform",
+      company: "Qualtrics",
+      period: "May 2021 - Oct 2022",
+      location: "Seattle, WA",
+      description: "Migrated the 3rd most visited SPA from Angular to React as part of a company-wide initiative to standardize on React and achieve WCAG 2.0 compliance.",
       skills: ["React", "Node.js", "AWS", "TypeScript"]
     },
     {
-      title: "Frontend Developer",
-      company: "Digital Solutions Ltd.",
-      period: "2018 - 2021",
-      description: "Developed responsive web applications and collaborated with UX designers to create intuitive user interfaces.",
-      skills: ["JavaScript", "React", "CSS/SCSS", "REST APIs"]
+      title: "Software Engineer Intern",
+      org: "Azure Compute",
+      company: "Microsoft",
+      period: "May 2019 - Aug 2019",
+      location: "Redmond, WA",
+      description: "Studied bin packing strategies to optimize the placement of VMs within Azure datacenters by batch processing 8000+ Monte Carlo simulations. Co-authored an internal document summarizing the findings to key stakeholders.",
+      skills: ["Python", "Monte Carlo", "Regression", "Batch Processing"]
     },
     {
-      title: "Web Developer Intern",
-      company: "StartUp Vision",
-      period: "2017 - 2018",
-      description: "Assisted in building web applications and learned modern web development practices in an agile environment.",
-      skills: ["HTML", "CSS", "JavaScript", "PHP"]
+      title: "Undergrad Student",
+      org: "Applied & Computational Mathematics Emphasis (ACME)",
+      company: "Brigham Young University",
+      period: "Sept 2015 - Apr 2021",
+      location: "Provo, UT",
+      description: "",
+      skills: ["Python", "Monte Carlo", "Regression", "Batch Processing"]
     },
     // Add more timeline items as needed
   ];
@@ -126,7 +143,13 @@ const CareerTimeline = () => {
                   <span className={styles.timelinePeriod}>{item.period}</span>
                 </div>
                 
-                <div className={styles.timelineCompany}>{item.company}</div>
+                <div className={styles.timelineCompany}>
+                  <span>{item.org}</span>
+                  <span>{item.company}</span>
+                </div>
+                <div className={styles.timelineLocationContainer}>
+                  <span className={styles.timelineLocation}>{item.location}</span>
+                </div>
                 <p className={styles.timelineDescription}>{item.description}</p>
                 
                 {item.skills && (
